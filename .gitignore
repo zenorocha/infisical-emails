@@ -1,2 +1,4 @@
+.env
+.next
 .react-email
 node_modules

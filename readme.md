@@ -1,27 +1,27 @@
-# React Email Starter
+# Infisical + Resend + Next.js
 
-A live preview right in your browser so you don't need to keep sending real emails during development.
+This example shows how to use Resend with [Next.js](https://nextjs.org).
 
-## Getting Started
+## Instructions
 
-First, install the dependencies:
+1. Define environment variables in `.env` file.
 
-```sh
+2. Install dependencies:
+
+  ```sh
 npm install
 # or
 yarn
-```
+  ```
 
-Then, run the development server:
+3. Run Next.js locally:
 
-```sh
+  ```sh
 npm run dev
-# or
-yarn dev
-```
+  ```
 
-Open [localhost:3001](http://localhost:3001) with your browser to see the result.
+4. Open URL in the browser:
 
-## License
-
-MIT License
+  ```
+http://localhost:3000
+  ```

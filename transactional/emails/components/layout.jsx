@@ -5,8 +5,8 @@ import { Section } from '@react-email/section';
 import { Text } from '@react-email/text';
 import * as React from 'react';
 
-export default function Email(children) {
-  const baseUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : '';
+export default function Layout({ children }) {
+  const baseUrl = "https://infisical-emails.vercel.app";
   
   return (
     <Section style={main}>
@@ -68,7 +68,7 @@ const hr = {
 const footer = {
   fontFamily,
   color: '#9ca3af',
-  textAlign: 'center' as const,
+  textAlign: 'center',
   fontSize: '12px',
   lineHeight: '24px',
 };

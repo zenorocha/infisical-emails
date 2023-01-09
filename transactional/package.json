@@ -1,8 +1,10 @@
 {
-  "name": "with-nextjs",
+  "name": "emails",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev"
+    "dev": "email dev",
+    "export": "email export"
   },
   "dependencies": {
     "@react-email/button": "^0.0.4",
@@ -16,9 +18,9 @@
     "@react-email/preview": "^0.0.2",
     "@react-email/section": "^0.0.1",
     "@react-email/text": "^0.0.2",
-    "next": "^12.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "resend": "^0.8.0"
+    "react-email": "^1.5.0",
+    "resend": "^0.9.1"
   }
 }

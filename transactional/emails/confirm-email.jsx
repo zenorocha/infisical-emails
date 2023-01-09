@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Button } from '@react-email/button';
 import { Head } from '@react-email/head';
 import { Html } from '@react-email/html';
 import { Preview } from '@react-email/preview';
@@ -7,27 +6,20 @@ import { Section } from '@react-email/section';
 import { Text } from '@react-email/text';
 import Layout from './components/layout';
 
-export default function Email() {
+export default function ConfirmEmail() {
   return (
     <Html>
       <Head />
-      <Preview>Zeno (zeno@resend.com) has invited you to their Infisical team.</Preview>
+      <Preview>Your confirmation code is below — enter it in the browser window where you've started signing up for Infisical.</Preview>
       <Layout>
         <Text style={h1}>
-          Join the Resend team on Infisical
+          Confirm your email address
         </Text>
         <Text style={text}>
-          <strong>Zeno (zeno@resend.com)</strong> has invited you to their Infisical team.
+          Your confirmation code is below — enter it in the browser window where you've started signing up for Infisical.
         </Text>
-        <Section style={btnContainer}>
-          <Button
-            pX={20}
-            pY={12}
-            style={btn}
-            href="https://infisical.com"
-          >
-            Join the team
-          </Button>
+        <Section style={codeContainer}>
+          <Text style={code}>144833</Text>
         </Section>
       </Layout>
     </Html>
@@ -41,7 +33,7 @@ const h1 = {
   color: '#e5e7eb',
   fontSize: '24px',
   fontWeight: 'normal',
-  textAlign: 'center' as const,
+  textAlign: 'center',
   margin: '30px 0',
   padding: '0',
 };
@@ -53,18 +45,25 @@ const text = {
   lineHeight: '24px',
 };
 
-const btnContainer = {
-  textAlign: 'center' as const,
+const codeContainer = {
+  background: '#0e1014',
+  borderRadius: '5px',
+  margin: '16px auto 14px',
+  verticalAlign: 'middle',
+  width: '280px',
 };
 
-const btn = {
+const code = {
   fontFamily,
-  backgroundColor: '#badc58',
-  borderRadius: '8px',
-  color: '#000000',
-  fontSize: '14px',
-  fontWeight: 600,
-  lineHeight: '50px',
-  textDecoration: 'none',
-  textAlign: 'center' as const,
+  color: '#e5e7eb',
+  display: 'inline-block',
+  fontSize: '32px',
+  fontWeight: 700,
+  letterSpacing: '6px',
+  lineHeight: '40px',
+  paddingBottom: '8px',
+  paddingTop: '8px',
+  margin: '0 auto',
+  width: '100%',
+  textAlign: 'center',
 };
